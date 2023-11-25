@@ -37,7 +37,7 @@ export default function (userOptions?: Partial<Options>): Plugin {
         return await addHash(url, page);
       }
 
-      return "";
+      return url;
     }
 
     async function addHash(url: string, page: Page) {
